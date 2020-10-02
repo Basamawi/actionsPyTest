@@ -2,7 +2,7 @@ name: Deploy app to Azure
 on:
   [push]
 env:
-  AZURE_WEBAPP_NAME: <snip>
+  AZURE_WEBAPP_NAME: py-workflow-test
   AZURE_WEBAPP_PACKAGE_PATH: '.'
   PYTHON_VERSION: '3.8'
 
