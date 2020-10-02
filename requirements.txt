@@ -1,0 +1,6 @@
+azure-keyvault>=0.3.6
+cryptography>=2.6.1
+flask
+msrest>=0.6.19
+msrestazure>=0.6.4
+pyjwt>=1.7.1
