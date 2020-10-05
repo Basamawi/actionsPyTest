@@ -1,11 +1,12 @@
   
 from flask import Flask
-
+import jwt
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Mwahaha, application.py!"
+  encoded_jwt = jwt.encode({'some': 'payload'}, 'secret', algorithm='HS256')
+    return "Mwahaha, application.py!" + encoded_jwt
     
 if __name__ == "__main__":
     app.run(debug=True)
