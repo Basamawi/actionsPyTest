@@ -1,6 +1,10 @@
   
 from flask import Flask
-import jwt
+from jwt import (
+    JWT,
+    jwk_from_dict,
+    jwk_from_pem,
+)
 app = Flask(__name__)
 
 @app.route("/")
